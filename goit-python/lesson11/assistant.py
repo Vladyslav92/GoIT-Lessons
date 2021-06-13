@@ -97,25 +97,3 @@ class Phone(Field):
             self.__phone = phone
         else:
             print('Not correct phone number!')
-
-
-name = Name('Vladislav')
-phone = Phone('0963455436')
-phone_1 = Phone('0956756772')
-record_1 = Record(name, '09090909090')
-record_1.add_phone(phone)
-record_1.add_phone(phone_1)
-
-testing = Birthday('22.08.1992')
-print(testing.birthday)
-
-adress = AddressBook()
-
-print(record_1.name.name)
-print(record_1.phones[0].phone)
-print(record_1.phones[1].phone)
-print(adress.iterator)
-
-Record.save_information(record_1)
-ss = Record('data.bin')
-Record.show_information(ss)
